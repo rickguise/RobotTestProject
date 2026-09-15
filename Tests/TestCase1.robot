@@ -12,7 +12,9 @@ ${MY-VARIABLE2}    my secondtest variable
 
 ${GOOGLE-SEARCH-FIELD}    //input[@title='Search']
 
-${MY-LIST}    item1    item2    item3
+@{MY-LIST}    item1    item2    item3
+
+&{MY-DICTIONARY}    username=testuser    password=pass    domain=domain.com
 
 *** Test Cases ***
 Test Case 1
@@ -20,6 +22,11 @@ Test Case 1
     Log       This is a sample test case
     Log       The value of my variable is: ${MY-VARIABLE}
     Log       The value of my variable is: ${MY-VARIABLE2}
-    Log       The value of my list is: ${MY-LIST}
-    Log       The value of my list is: ${MY-LIST}[2]
     Log       The value of the Google search field is: ${GOOGLE-SEARCH-FIELD}    
+    Log       The value of my list is: ${MY-LIST}
+    Log       The value of my list item is: ${MY-LIST}[2]
+    Log       The value of my list item is: ${MY-LIST}[0]
+    Log       The value of my dictionary is: ${MY-DICTIONARY}
+    Log       The value of my dictionary item is: ${MY-DICTIONARY}[username]    
+    Log       The value of my dictionary item is: ${MY-DICTIONARY}[password]    
+    Log       The value of my dictionary item is: ${MY-DICTIONARY}[domain]        
