@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.7 on win32)" generated="2026-09-15T16:28:39.300683" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCase1" source="C:\Users\Richard Guise\OneDrive - COCUS AG\Python\RobotTestProject\Tests\TestCase1.robot">
+<test id="s1-t1" name="Test Case 1" line="18">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-15T16:28:39.379932" level="TRACE">Arguments: [ 'This is a sample test case' ]</msg>
+<msg time="2026-09-15T16:28:39.380045" level="INFO">This is a sample test case</msg>
+<msg time="2026-09-15T16:28:39.380092" level="TRACE">Return: None</msg>
+<arg>This is a sample test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-15T16:28:39.379643" elapsed="0.000494"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-15T16:28:39.381085" level="TRACE">Arguments: [ 'The value of my variable is: my test variable' ]</msg>
+<msg time="2026-09-15T16:28:39.381176" level="INFO">The value of my variable is: my test variable</msg>
+<msg time="2026-09-15T16:28:39.381219" level="TRACE">Return: None</msg>
+<arg>The value of my variable is: ${MY-VARIABLE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-15T16:28:39.380773" elapsed="0.000481"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-15T16:28:39.382234" level="TRACE">Arguments: [ 'The value of my variable is: my secondtest variable' ]</msg>
+<msg time="2026-09-15T16:28:39.382337" level="INFO">The value of my variable is: my secondtest variable</msg>
+<msg time="2026-09-15T16:28:39.382382" level="TRACE">Return: None</msg>
+<arg>The value of my variable is: ${MY-VARIABLE2}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-15T16:28:39.381865" elapsed="0.000555"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-15T16:28:39.382979" level="TRACE">Arguments: [ 'The value of my list is: item1 item2 item3' ]</msg>
+<msg time="2026-09-15T16:28:39.383049" level="INFO">The value of my list is: item1 item2 item3</msg>
+<msg time="2026-09-15T16:28:39.383082" level="TRACE">Return: None</msg>
+<arg>The value of my list is: ${MY-LIST}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-15T16:28:39.382723" elapsed="0.000389"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-15T16:28:39.383730" level="TRACE">Arguments: [ 'The value of my list is: e' ]</msg>
+<msg time="2026-09-15T16:28:39.383819" level="INFO">The value of my list is: e</msg>
+<msg time="2026-09-15T16:28:39.383873" level="TRACE">Return: None</msg>
+<arg>The value of my list is: ${MY-LIST}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-15T16:28:39.383434" elapsed="0.000629"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-15T16:28:39.384815" level="TRACE">Arguments: [ "The value of the Google search field is: //input[@title='Search']" ]</msg>
+<msg time="2026-09-15T16:28:39.384900" level="INFO">The value of the Google search field is: //input[@title='Search']</msg>
+<msg time="2026-09-15T16:28:39.384939" level="TRACE">Return: None</msg>
+<arg>The value of the Google search field is: ${GOOGLE-SEARCH-FIELD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-15T16:28:39.384531" elapsed="0.000445"/>
+</kw>
+<tag>demo</tag>
+<tag>demo2</tag>
+<status status="PASS" start="2026-09-15T16:28:39.378513" elapsed="0.006894"/>
+</test>
+<doc>Test Case 1 - My first test case</doc>
+<status status="PASS" start="2026-09-15T16:28:39.302611" elapsed="0.083840"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">demo</stat>
+<stat pass="1" fail="0" skip="0">demo2</stat>
+</tag>
+<suite>
+<stat name="TestCase1" id="s1" pass="1" fail="0" skip="0">TestCase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
