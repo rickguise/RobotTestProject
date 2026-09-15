@@ -4,6 +4,11 @@ Library           OperatingSystem
 
 
 *** Keywords ***
+Log My Username
+     Log       The value of my username is: ${MY-DICTIONARY}[username]
+
+Log My Password
+     Log       The value of my password is: ${MY-DICTIONARY}[password]
 
 
 *** Variables ***
@@ -29,4 +34,7 @@ Test Case 1
     Log       The value of my dictionary is: ${MY-DICTIONARY}
     Log       The value of my dictionary item is: ${MY-DICTIONARY}[username]    
     Log       The value of my dictionary item is: ${MY-DICTIONARY}[password]    
-    Log       The value of my dictionary item is: ${MY-DICTIONARY}[domain]        
+    Log       The value of my dictionary item is: ${MY-DICTIONARY}[domain]    
+    Log My Username  
+    Log My Password
+      
