@@ -1,127 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.7 on win32)" generated="2026-09-15T17:49:06.632010" rpa="false" schemaversion="5">
-<suite id="s1" name="TestCase1" source="C:\Users\Richard Guise\OneDrive - COCUS AG\Python\RobotTestProject\Tests\TestCase1.robot">
-<test id="s1-t1" name="Test Case 1" line="25">
+<robot generator="Robot 7.4.2 (Python 3.14.7 on win32)" generated="2026-09-17T10:50:49.323681" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCase4" source="C:\Users\Richard Guise\OneDrive - COCUS AG\Python\RobotTestProject\Tests\TestCase4.robot">
+<test id="s1-t1" name="Test Case 4" line="6">
+<kw name="Log My Specific Username and Password" owner="resources">
+<msg time="2026-09-17T10:50:49.501903" level="TRACE">Arguments: [ ${username}='testuser' | ${password}='pass' ]</msg>
+<kw name="Log My Specific Username" owner="resources">
+<msg time="2026-09-17T10:50:49.502929" level="TRACE">Arguments: [ ${username}='testuser' ]</msg>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.681148" level="TRACE">Arguments: [ 'This is a sample test case' ]</msg>
-<msg time="2026-09-15T17:49:06.681301" level="INFO">This is a sample test case</msg>
-<msg time="2026-09-15T17:49:06.681344" level="TRACE">Return: None</msg>
-<arg>This is a sample test case</arg>
+<msg time="2026-09-17T10:50:49.504442" level="TRACE">Arguments: [ 'The value of my specific username item is: testuser' ]</msg>
+<msg time="2026-09-17T10:50:49.504620" level="INFO">The value of my specific username item is: testuser</msg>
+<msg time="2026-09-17T10:50:49.504707" level="TRACE">Return: None</msg>
+<arg>The value of my specific username item is: ${username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.680910" elapsed="0.000470"/>
+<status status="PASS" start="2026-09-17T10:50:49.503745" elapsed="0.001035"/>
 </kw>
+<msg time="2026-09-17T10:50:49.504937" level="TRACE">Return: None</msg>
+<arg>${username}</arg>
+<status status="PASS" start="2026-09-17T10:50:49.502502" elapsed="0.002503"/>
+</kw>
+<kw name="Log My Specific Password" owner="resources">
+<msg time="2026-09-17T10:50:49.506060" level="TRACE">Arguments: [ ${password}='pass' ]</msg>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.681932" level="TRACE">Arguments: [ 'The value of my variable is: my test variable' ]</msg>
-<msg time="2026-09-15T17:49:06.681991" level="INFO">The value of my variable is: my test variable</msg>
-<msg time="2026-09-15T17:49:06.682017" level="TRACE">Return: None</msg>
-<arg>The value of my variable is: ${MY-VARIABLE}</arg>
+<msg time="2026-09-17T10:50:49.507110" level="TRACE">Arguments: [ 'The value of my specific password item is: pass' ]</msg>
+<msg time="2026-09-17T10:50:49.507269" level="INFO">The value of my specific password item is: pass</msg>
+<msg time="2026-09-17T10:50:49.507340" level="TRACE">Return: None</msg>
+<arg>The value of my specific password item is: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.681706" elapsed="0.000336"/>
+<status status="PASS" start="2026-09-17T10:50:49.506565" elapsed="0.000840"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.682436" level="TRACE">Arguments: [ 'The value of my variable is: my secondtest variable' ]</msg>
-<msg time="2026-09-15T17:49:06.682487" level="INFO">The value of my variable is: my secondtest variable</msg>
-<msg time="2026-09-15T17:49:06.682510" level="TRACE">Return: None</msg>
-<arg>The value of my variable is: ${MY-VARIABLE2}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.682245" elapsed="0.000287"/>
+<msg time="2026-09-17T10:50:49.507519" level="TRACE">Return: None</msg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-09-17T10:50:49.505288" elapsed="0.002290"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.682861" level="TRACE">Arguments: [ "The value of the Google search field is: //input[@title='Search']" ]</msg>
-<msg time="2026-09-15T17:49:06.682909" level="INFO">The value of the Google search field is: //input[@title='Search']</msg>
-<msg time="2026-09-15T17:49:06.682936" level="TRACE">Return: None</msg>
-<arg>The value of the Google search field is: ${GOOGLE-SEARCH-FIELD}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.682684" elapsed="0.000275"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.683265" level="TRACE">Arguments: [ "The value of my list is: ['item1', 'item2', 'item3']" ]</msg>
-<msg time="2026-09-15T17:49:06.683311" level="INFO">The value of my list is: ['item1', 'item2', 'item3']</msg>
-<msg time="2026-09-15T17:49:06.683333" level="TRACE">Return: None</msg>
-<arg>The value of my list is: ${MY-LIST}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.683101" elapsed="0.000253"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.683768" level="TRACE">Arguments: [ 'The value of my list item is: item3' ]</msg>
-<msg time="2026-09-15T17:49:06.683813" level="INFO">The value of my list item is: item3</msg>
-<msg time="2026-09-15T17:49:06.683834" level="TRACE">Return: None</msg>
-<arg>The value of my list item is: ${MY-LIST}[2]</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.683493" elapsed="0.000363"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.684344" level="TRACE">Arguments: [ 'The value of my list item is: item1' ]</msg>
-<msg time="2026-09-15T17:49:06.684397" level="INFO">The value of my list item is: item1</msg>
-<msg time="2026-09-15T17:49:06.684420" level="TRACE">Return: None</msg>
-<arg>The value of my list item is: ${MY-LIST}[0]</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.683988" elapsed="0.000454"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.684796" level="TRACE">Arguments: [ "The value of my dictionary is: {'username': 'testuser', 'password': 'pass', 'domain': 'domain.com'}" ]</msg>
-<msg time="2026-09-15T17:49:06.684839" level="INFO">The value of my dictionary is: {'username': 'testuser', 'password': 'pass', 'domain': 'domain.com'}</msg>
-<msg time="2026-09-15T17:49:06.684862" level="TRACE">Return: None</msg>
-<arg>The value of my dictionary is: ${MY-DICTIONARY}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.684627" elapsed="0.000257"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.685225" level="TRACE">Arguments: [ 'The value of my dictionary item is: testuser' ]</msg>
-<msg time="2026-09-15T17:49:06.685288" level="INFO">The value of my dictionary item is: testuser</msg>
-<msg time="2026-09-15T17:49:06.685311" level="TRACE">Return: None</msg>
-<arg>The value of my dictionary item is: ${MY-DICTIONARY}[username]</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.685064" elapsed="0.000286"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.686014" level="TRACE">Arguments: [ 'The value of my dictionary item is: pass' ]</msg>
-<msg time="2026-09-15T17:49:06.686063" level="INFO">The value of my dictionary item is: pass</msg>
-<msg time="2026-09-15T17:49:06.686086" level="TRACE">Return: None</msg>
-<arg>The value of my dictionary item is: ${MY-DICTIONARY}[password]</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.685814" elapsed="0.000293"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.686520" level="TRACE">Arguments: [ 'The value of my dictionary item is: domain.com' ]</msg>
-<msg time="2026-09-15T17:49:06.686573" level="INFO">The value of my dictionary item is: domain.com</msg>
-<msg time="2026-09-15T17:49:06.686596" level="TRACE">Return: None</msg>
-<arg>The value of my dictionary item is: ${MY-DICTIONARY}[domain]</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.686289" elapsed="0.000329"/>
-</kw>
-<kw name="Log My Username">
-<msg time="2026-09-15T17:49:06.686984" level="TRACE">Arguments: [  ]</msg>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.687248" level="TRACE">Arguments: [ 'The value of my username is: testuser' ]</msg>
-<msg time="2026-09-15T17:49:06.687290" level="INFO">The value of my username is: testuser</msg>
-<msg time="2026-09-15T17:49:06.687312" level="TRACE">Return: None</msg>
-<arg>The value of my username is: ${MY-DICTIONARY}[username]</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.687093" elapsed="0.000240"/>
-</kw>
-<msg time="2026-09-15T17:49:06.687373" level="TRACE">Return: None</msg>
-<status status="PASS" start="2026-09-15T17:49:06.686859" elapsed="0.000532"/>
-</kw>
-<kw name="Log My Password">
-<msg time="2026-09-15T17:49:06.687799" level="TRACE">Arguments: [  ]</msg>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-09-15T17:49:06.688120" level="TRACE">Arguments: [ 'The value of my password is: pass' ]</msg>
-<msg time="2026-09-15T17:49:06.688165" level="INFO">The value of my password is: pass</msg>
-<msg time="2026-09-15T17:49:06.688187" level="TRACE">Return: None</msg>
-<arg>The value of my password is: ${MY-DICTIONARY}[password]</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-09-15T17:49:06.687872" elapsed="0.000336"/>
-</kw>
-<msg time="2026-09-15T17:49:06.688247" level="TRACE">Return: None</msg>
-<status status="PASS" start="2026-09-15T17:49:06.687683" elapsed="0.000586"/>
+<msg time="2026-09-17T10:50:49.507676" level="TRACE">Return: None</msg>
+<arg>${MY-DICTIONARY}[username]</arg>
+<arg>${MY-DICTIONARY}[password]</arg>
+<status status="PASS" start="2026-09-17T10:50:49.501297" elapsed="0.006438"/>
 </kw>
 <tag>demo</tag>
 <tag>demo2</tag>
-<status status="PASS" start="2026-09-15T17:49:06.680136" elapsed="0.008369"/>
+<status status="PASS" start="2026-09-17T10:50:49.499525" elapsed="0.008707"/>
 </test>
-<doc>Test Case 1 - My first test case</doc>
-<status status="PASS" start="2026-09-15T17:49:06.634089" elapsed="0.054861"/>
+<doc>Test Case 4 - My fourth test case</doc>
+<status status="PASS" start="2026-09-17T10:50:49.328839" elapsed="0.184182"/>
 </suite>
 <statistics>
 <total>
@@ -132,7 +53,7 @@
 <stat pass="1" fail="0" skip="0">demo2</stat>
 </tag>
 <suite>
-<stat name="TestCase1" id="s1" pass="1" fail="0" skip="0">TestCase1</stat>
+<stat name="TestCase4" id="s1" pass="1" fail="0" skip="0">TestCase4</stat>
 </suite>
 </statistics>
 <errors>
